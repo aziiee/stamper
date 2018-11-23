@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="org/jdesktop/swingx/table/|org/jdesktop/swingx/graphics/|org/jdesktop/swingx/plaf/synth/" kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/AK/gitProjects/stamper/external_jars/prompt.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/AK/gitProjects/stamper/external_jars/tablelayout.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
