@@ -15,6 +15,7 @@ import common.TimeModifierImpl;
 import view.MainFrame;
 
 /**
+ * This class is responsible for validating the fields and execute the selected action
  *
  * @author AK
  *

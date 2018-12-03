@@ -5,6 +5,8 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 /**
+ * This is the Main class of the application which creates and the {@link MainFrame} and sets
+ * the look and feel
  *
  * @author AK
  *

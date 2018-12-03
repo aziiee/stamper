@@ -9,6 +9,7 @@ import javax.swing.JTextField;
 import view.MainFrame;
 
 /**
+ * Used to reset all values in the application such as file path and field values
  *
  * @author AK
  *

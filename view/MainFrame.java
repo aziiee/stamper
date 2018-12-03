@@ -19,10 +19,12 @@ import common.Actions;
 import event.BrowseButtonListener;
 import event.ComboBoxActionlistener;
 import event.FieldSelectedFileFocusListener;
-import event.FieldSelectedFileMouseListener;
 import info.clearthought.layout.TableLayout;
 
 /**
+ * This is the mainframe of the entire Application. All Elements used in the application are created here
+ * and placed on the MainFrame. Also, this class contains several Getters and Setters which are used by
+ * other classes to access elements on the MainFrame.
  *
  * @author AK
  *
@@ -44,7 +46,7 @@ public class MainFrame extends JFrame {
 	private JComboBox<String> comboBoxAction;
 
 	/**
-	 *
+	 * Constructor
 	 */
 	public MainFrame() {
 		super("File Manipulator");
@@ -68,7 +70,6 @@ public class MainFrame extends JFrame {
 		PromptSupport.setPrompt("File path", fieldSelectedFile);
 		fieldSelectedFile.setDragEnabled(true);
 		fieldSelectedFile.addFocusListener(new FieldSelectedFileFocusListener(this));
-		fieldSelectedFile.addMouseListener(new FieldSelectedFileMouseListener());
 
 		fieldDate = new JFormattedTextField(new SimpleDateFormat("dd/MM/yyyy"));
 		PromptSupport.setPrompt("dd/mm/yyyy", fieldDate);
@@ -103,6 +104,7 @@ public class MainFrame extends JFrame {
 	}
 
 	/**
+	 * This method is used to reset the border after an error message
 	 *
 	 * @return
 	 */

@@ -8,6 +8,7 @@ import javax.swing.JComboBox;
 import view.MainFrame;
 
 /**
+ * To be implemented
  *
  * @author AK
  *
@@ -27,8 +28,5 @@ public class ComboBoxActionlistener implements ActionListener {
 	 *
 	 */
 	public void actionPerformed(ActionEvent e) {
-		if ((e.getSource() instanceof JComboBox)) {
-			System.out.println(mainFrame.getComboBoxAction().getSelectedItem());
-		}
 	}
 }

@@ -12,6 +12,8 @@ import javax.swing.JTextField;
 import view.MainFrame;
 
 /**
+ * This class is used to create a red border around the File path TextFie if the given file path doesn't
+ * exist
  *
  * @author AK
  *
@@ -20,8 +22,9 @@ public class FieldSelectedFileFocusListener implements FocusListener {
 	private MainFrame mainFrame;
 
 	/**
+	 * Constructor
 	 *
-	 * @param mainFrame
+	 * @param mainFrame Is needed to access the TextField
 	 */
 	public FieldSelectedFileFocusListener(MainFrame mainFrame) {
 		this.mainFrame = mainFrame;
@@ -34,7 +37,8 @@ public class FieldSelectedFileFocusListener implements FocusListener {
 	}
 
 	/**
-	 *
+	 * Whenever the focus is lost on the File path TextField, the given path is checked and an appropriate
+	 * border is set on the TextField
 	 */
 	public void focusLost(FocusEvent fe) {
 		if ((fe.getSource() instanceof JTextField)) {
